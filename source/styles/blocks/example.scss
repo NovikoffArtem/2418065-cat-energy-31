@@ -1,0 +1,11 @@
+.example {
+  background-color: $bg-light-theme;
+
+  @media (min-width: 768px) {
+    background: linear-gradient(to bottom, $light-text-color 50%, $bg-light-theme 50%);
+  }
+
+  @media (min-width: 1440px) {
+    background: linear-gradient(to bottom, $light-text-color 136px, $bg-light-theme 136px);
+  }
+}

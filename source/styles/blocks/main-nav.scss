@@ -1,0 +1,29 @@
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__link {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @include link-reset ($second-text-color);
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $light-text-color;
+  }
+}
+
+.main-nav__link--catalog {
+  @media (min-width: 1440px) {
+    color: $second-dark;
+  }
+}

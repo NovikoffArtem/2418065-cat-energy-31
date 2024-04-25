@@ -1,0 +1,13 @@
+// .main-header__wrapper {
+
+// }
+.main-header__logo {
+  text-decoration: none;
+}
+
+.main-header__logo-text {
+  @media (min-width: 1440px) {
+    width: 118px;
+    height: 21px;
+  }
+}

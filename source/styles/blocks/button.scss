@@ -1,0 +1,18 @@
+.button {
+  @include link-reset($light-text-color);
+
+  font-family: $secondary-font;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+}
+
+
+.button--primary {
+  background-color: $bg-theme;
+}
+
+.button--secondary {
+  background-color: $basic-grey;
+  color: $basic-text-color;
+}

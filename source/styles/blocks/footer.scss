@@ -1,0 +1,10 @@
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-light-theme;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

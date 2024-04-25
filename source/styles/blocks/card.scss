@@ -1,0 +1,48 @@
+.card {
+  @media (min-width: 768px) {
+    background: linear-gradient(to bottom, $light-text-color 71px, $bg-light-theme 71px);
+  }
+}
+
+.card__link {
+  @include link-reset ($dark-grey-color);
+}
+
+.card__title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.card__title--more {
+  color: $second-dark;
+}
+
+.card__text {
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.card__text--more {
+  text-align: center;
+
+  @media (min-width: 768px) {
+    line-height: 18px;
+  }
+}
+
+.card--more {
+  background: none;
+}

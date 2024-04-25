@@ -1,0 +1,9 @@
+.social-list {
+  @include list-reset;
+  display: flex;
+  gap: 52px;
+
+  @media (min-width: 768pc) {
+    gap: 24px;
+  }
+}

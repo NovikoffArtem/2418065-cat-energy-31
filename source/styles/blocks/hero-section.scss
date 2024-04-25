@@ -1,0 +1,41 @@
+.hero-section {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.hero-section__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
+  color: $light-text-color;
+  font-weight: 400;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $second-text-color;
+  }
+}
+
+.hero-section__desc {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $light-text-color;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $second-text-color;
+  }
+}
+
+.hero-section__button {
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

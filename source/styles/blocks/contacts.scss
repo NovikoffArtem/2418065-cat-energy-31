@@ -1,0 +1,27 @@
+.contacts {
+  display: flex;
+}
+
+.contacts__title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $second-dark;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.contacts__text {
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+}

@@ -1,4 +1,6 @@
 .card {
+  min-width: 280px;
+
   @media (min-width: 768px) {
     background: linear-gradient(to bottom, $light-text-color 71px, $bg-light-theme 71px);
   }
@@ -23,6 +25,7 @@
 
 .card__title--more {
   color: $second-dark;
+  margin-top: 53px;
 }
 
 .card__text {
@@ -44,5 +47,14 @@
 }
 
 .card--more {
-  background: none;
+  background-image: url("../../icons/plus.svg");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center top 25px;
+  padding-top: 25px;
+  padding-bottom: 24px;
+  text-align: center;
+  border-bottom: 1px solid $bg-light-theme;
+  border-top: 1px solid $bg-light-theme;
 }
+

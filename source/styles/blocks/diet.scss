@@ -1,9 +1,45 @@
 .diet__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .diet__item {
   background-color: $basic-grey;
+  padding: 18px 20px;
+  position: relative;
+}
+
+.diet__item::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $bg-theme;
+  position: absolute;
+}
+
+.diet__item::after {
+  content: "";
+  width: 68px;
+  height: 50px;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.diet__item--tiny::after {
+  background-image: url("../../icons/cat-sit.svg");
+  background-size: 37px 50px;
+  top: 16px;
+  left: 27px;
+}
+
+.diet__item--fat::after {
+  background-image: url("../../icons/cat-walk.svg");
+  background-size: 68px 29px;
+  left: 12px;
+  top: 30px;
 }
 
 .diet__title {
@@ -11,6 +47,8 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
+  margin: 0;
+  margin-left: 90px;
 
   @media (min-width: 768px) {
     font-size: 36px;
@@ -19,6 +57,11 @@
 }
 
 .diet__desc {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 15px;
+
+
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 24px;
@@ -31,8 +74,30 @@
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
 
   @media (min-width: 768px) {
     font-size: 20px;
   }
+}
+
+.diet__link::after {
+  content: "";
+  width: 24px;
+  height: 12px;
+  display: block;
+  background-image: url("../../icons/arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.diet__link:hover::after,
+.diet__link:focus-visible::after {
+  width: 32px;
+  height: 10px;
+}
+
+.diet__link:active {
+  opacity: 0.5;
 }

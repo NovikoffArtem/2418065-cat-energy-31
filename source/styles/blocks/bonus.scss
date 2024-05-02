@@ -1,9 +1,84 @@
 .bonus {
-  background-color: rgba(104, 183, 56, 0.85);
+
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 280px;
+  min-height: 290px;
+  padding: 59px 59px 43px;
+  position: relative;
+  text-align: center;
+  background-image:
+    image-set(
+      url("../../images/bonus-bg@1x.webp") type("image/webp") 1x,
+      url("../../images/bonus-bg@2x.webp") type("image/webp") 2x,
+      url("../../images/bonus-bg@1x.jpg") type("image/jpg") 1x,
+      url("../../images/bonus-bg@2x.jpg") type("image/jpg") 2x,
+    );
+  background-repeat: no-repeat;
+  background-size: 280px 290px, 100%;
+  background-position: center;
+
+  @media (min-width: 768px) {
+    width: 707px;
+    background-image:
+      image-set(
+        url("../../images/bonus-bg-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/bonus-bg-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/bonus-bg-tablet@1x.jpg") type("image/jpg") 1x,
+        url("../../images/bonus-bg-tablet@2x.jpg") type("image/jpg") 2x,
+      );
+    background-repeat: no-repeat;
+    background-size: 707px 200px, 100%;
+    background-position: center;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 245px;
+    background-image:
+      image-set(
+        url("../../images/bonus-bg-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/bonus-bg-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/bonus-bg-desktop@1x.jpg") type("image/jpg") 1x,
+        url("../../images/bonus-bg-desktop@2x.jpg") type("image/jpg") 2x,
+      );
+    background-repeat: no-repeat;
+    background-size: 245px 288px, 100%;
+    background-position: center;
+  }
 }
+
+.bonus::after {
+  content: "";
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(104, 183, 56, 0.8);
+}
+
 
 .bonus__text {
   font-size: 16px;
   line-height: 20px;
   color: $light-text-color;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 128px;
+  z-index: 1;
+  position: relative;
+}
+
+.bonus__text::before {
+  content: "";
+  width: 78px;
+  height: 80px;
+  position: absolute;
+  background-image: url("../../icons/gift.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: -131px;
+  left: 50%;
+  transform: translateX(-50%);
 }

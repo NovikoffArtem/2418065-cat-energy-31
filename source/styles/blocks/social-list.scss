@@ -7,3 +7,47 @@
     gap: 24px;
   }
 }
+
+
+.social-list__link {
+  width: 28px;
+  height: 22px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list__link::before {
+  content: "";
+  position: absolute;
+  background-color: $icon-grey;
+  mask-position: center;
+}
+
+.social-list__link--vk::before {
+  mask-image: url("../../icons/vk.svg");
+  width: 27px;
+  height: 17px;
+}
+
+.social-list__link--yt::before {
+  mask-image: url("../../icons/yt.svg");
+  width: 24px;
+  height: 19px;
+}
+
+.social-list__link--tg::before {
+  mask-image: url("../../icons/tg.svg");
+  width: 20px;
+  height: 17px;
+}
+
+.social-list__link:hover::before,
+.social-list__link:focus-visible::before {
+  background-color: $bg-theme;
+}
+
+.social-list__link:active::before {
+  background-color: rgba(104, 183, 56, 0.4);
+}

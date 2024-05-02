@@ -1,8 +1,67 @@
+.advantages__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .advantages__list {
   @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  position: relative;
+}
+
+.advantages__item::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-color: $bg-theme;
+  display: block;
+  left: 0;
+}
+
+.advantages__item::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--nutritious::after {
+  background-image: url("../../icons/leaf.svg");
+  background-size: 25px 28px;
+}
+
+.advantages__item--powder::after {
+  background-image: url("../../icons/hot-water.svg");
+  background-size: 25px 27px;
+}
+
+.advantages__item--cutlery::after {
+  background-image: url("../../icons/cutlery.svg");
+  background-size: 25px 30px;
+}
+
+.advantages__item--alarm::after {
+  background-image: url("../../icons/alarm.svg");
+  background-size: 26px 31px;
 }
 
 .advantages__text {
+  margin: 0;
+  margin-left: 80px;
+
+
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 24px;

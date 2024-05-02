@@ -15,18 +15,22 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" type="image/svg" srcset="images/logo-tablet-desktop.svg" width="60" height="50">
-          <source media="(min-width: 768px)" type="image/svg" srcset="images/logo-tablet-desktop.svg" width="60" height="50">
-          <img class="main-header__logo-pic logo-pic" src="images/logo-mobile.svg" alt="Логотип сайта" width="33" height="38">
-        </picture>
-        <img class="main-header__logo-text logo-text" src="images/logo-text.svg" alt="Логотип сайта" width="101" height="18">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <div class="main-header__header-wrapper">
+          <a class="main-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-tablet-desktop.svg" width="70" height="59">
+              <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-tablet-desktop.svg" width="60" height="50">
+              <img class="logo-pic" src="images/logo-mobile.svg" alt="Логотип сайта" width="33" height="38">
+            </picture>
+          </a>
+          <a class="main-header__logo" href="index.html">
+            <img class="logo-text logo-text--size" src="images/logo-text.svg" alt="Логотип сайта" width="101" height="18">
+          </a>
+          <button class="main-header__toggle toggle--close toggle button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
@@ -41,18 +45,18 @@
       </nav>
       <section class="hero-section">
         <div class="hero-section__wrapper">
-          <h1 class="hero-section__title">Функциональное<br> питание для котов</h1>
-          <p class="hero-section__desc">
-            Занялся собой? Займись котом!
-          </p>
-          <a class="hero-section__button button button--primary" href="#">Подбор программы</a>
-          <div class="hero-section__image-container">
-            <picture>
-              <source media="(min-width: 1440px)" type="image/png" srcset="images/hero-desktop@1x.png 1x, images/hero-desktop@2x.png 2x" width="552" height="499">
-              <source media="(min-width: 768px)" type="image/png" srcset="images/hero-tablet@1x.png 1x, images/hero-tablet@2x.png 2x" width="709" height="609">
-              <img class="hero-section__image" src="images/hero-mobile@1x.png" srcset="images/hero-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy со вкусом курицы">
-            </picture>
+          <div class="hero-section__content">
+            <h1 class="hero-section__title">Функциональное<br> питание для котов</h1>
+            <p class="hero-section__desc">
+              Занялся собой? Займись котом!
+            </p>
+            <a class="hero-section__button button button--primary" href="#">Подбор программы</a>
           </div>
+          <picture>
+            <source media="(min-width: 1440px)" type="image/png" srcset="images/hero-desktop@1x.png 1x, images/hero-desktop@2x.png 2x" width="552" height="499">
+            <source media="(min-width: 768px)" type="image/png" srcset="images/hero-tablet@1x.png 1x, images/hero-tablet@2x.png 2x" width="709" height="609">
+            <img class="hero-section__image" src="images/hero-mobile@1x.png" srcset="images/hero-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy со вкусом курицы">
+          </picture>
         </div>
       </section>
     </div>
@@ -60,9 +64,10 @@
   <main class="main-content">
     <section class="diet">
       <div class="diet__wrapper">
+        <h2 class="visually-hidden">Выбор программы</h2>
         <ul class="diet__list">
-          <li class="diet__item">
-            <h2 class="diet__title">Похудение</h2>
+          <li class="diet__item diet__item--tiny">
+            <h3 class="diet__title">Похудение</h3>
             <p class="diet__desc">
               Ваш кот весит больше собаки и почти утратил способность
               лазить по деревьям? Пора на диету! Cat Energy Slim поможет
@@ -70,8 +75,8 @@
             </p>
             <a class="diet__link" href="#">каталог slim</a>
           </li>
-          <li class="diet__item">
-            <h2 class="diet__title">Набор массы</h2>
+          <li class="diet__item diet__item--fat">
+            <h3 class="diet__title">Набор массы</h3>
             <p class="diet__desc">
               Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить
@@ -86,28 +91,28 @@
       <div class="advantages__wrapper">
         <h2 class="advantages__title section-title">Как это работает</h2>
         <ol class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--nutritious">
             <p class="advantages__text">
               Функциональное питание
               содержит только полезные
               питательные вещества.
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--powder">
             <p class="advantages__text">
               Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--cutlery">
             <p class="advantages__text">
               Замените один-два приема
               обычной еды на наше
               функциональное питание.
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--alarm">
             <p class="advantages__text">
               Уже через месяц наслаждайтесь
               изменениями к лучшему
@@ -187,7 +192,7 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <a class="footer__logo" href="index.html">
+      <a class="footer__logo logo-text" href="index.html">
         <img src="images/logo-text.svg" alt="Логотип Cat Energy" width="128" height="24">
       </a>
       <ul class="footer__social social-list">
@@ -203,8 +208,8 @@
       </ul>
       <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__text">HTML Academy</p>
-        <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.6426 0.515754L13.5 0.5L0 1.90733V26.5129L13.5 34.5L27 26.5129V1.90733L13.6426 0.515754ZM25.2344 25.5151L13.5 32.4573L1.76561 25.5151V15.4293L13.4507 22.3451L13.4701 23.5984L5.45351 18.8548L5.44295 20.0801L13.4894 24.8885L13.5088 26.175L5.46408 21.4174L5.45351 22.6427L13.5 27.4511L21.6239 22.6182V21.3929V17.409L25.2432 15.2595L25.2344 25.5151ZM25.2344 13.9519L22.0147 15.8319L20.5325 16.7071L13.4666 12.5201L13.456 13.7454L19.4957 17.318L19.4429 17.3495L19.3126 17.4247L18.4536 17.9166L13.4666 14.9689L13.456 16.1942L17.3921 18.5222L16.4591 19.1314L16.438 19.1436L13.4666 17.402L13.456 18.6273L15.4029 19.7615L13.4155 20.9483L1.7973 14.0762L13.4349 7.11831L25.2344 13.9519ZM25.2344 12.7266L13.4401 5.81075L1.76561 12.7196V3.4897L13.5 2.26442L25.2344 3.4897V12.7266Z" fill="#666666" />
+        <svg class="copyright__logo" width="27" height="35">
+          <use href="../icons/stack.svg#logo-academy"></use>
         </svg>
       </a>
     </div>

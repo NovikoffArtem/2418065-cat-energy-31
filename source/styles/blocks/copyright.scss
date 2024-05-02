@@ -1,3 +1,22 @@
 .copyright {
   display: flex;
+  text-decoration: none;
+  color: $icon-grey;
+}
+
+.copyright__logo {
+  fill: currentColor;
+}
+
+.copyright__text {
+  color: $basic-text-color;
+}
+
+.copyright:hover,
+.copyright:focus-visible {
+  color: $bg-theme;
+}
+
+.copyright:active {
+  opacity: 0.4;
 }

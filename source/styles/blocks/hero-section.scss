@@ -1,5 +1,67 @@
 .hero-section {
-  background-color: rgba(104, 183, 56, 0.85);
+  position: relative;
+  background-image:
+    image-set(
+      url("../../images/hero-bg@1x.webp") type("image/webp") 1x,
+      url("../../images/hero-bg@2x.webp") type("image/webp") 2x,
+      url("../../images/hero-bg@1x.jpg") type("image/jpg") 1x,
+      url("../../images/hero-bg@2x.jpg") type("image/jpg") 2x,
+    );
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  background-position: top center;
+
+  @media (min-width: 768px) {
+    background: none;
+  }
+
+  @media (min-width: 1440px) {
+    min-width: 1440px;
+    min-height: 694px;
+    background-image:
+      image-set(
+        url("../../images/hero-bg-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/hero-bg-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/hero-bg-desktop@1x.jpg") type("image/jpg") 1x,
+        url("../../images/hero-bg-desktop@2x.jpg") type("image/jpg") 2x,
+      );
+    background-size: 720px 694px;
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero-section::after {
+  content: "";
+  min-width: 100%;
+  min-height: 302px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(104, 183, 56, 0.8);
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    background: none;
+  }
+
+  @media (min-width: 1440px) {
+    content: "";
+    top: -100px;
+    min-height: 100%;
+    background-image: linear-gradient(90deg, $light-text-color 50%, rgba(104, 183, 56, 0.85) 50%);
+    background-repeat: no-repeat;
+  }
+}
+
+.hero-section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .hero-section__title {
@@ -8,6 +70,9 @@
   line-height: 36px;
   color: $light-text-color;
   font-weight: 400;
+  margin: 0;
+  margin-top: 27px;
+  z-index: 2;
 
   @media (min-width: 768px) {
     font-size: 60px;
@@ -22,6 +87,8 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $light-text-color;
+  margin: 0;
+  z-index: 2;
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -33,9 +100,24 @@
 .hero-section__button {
   font-size: 16px;
   line-height: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  min-width: 280px;
+  position: absolute;
+  bottom: -25px;
+  display: block;
+
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 26px;
   }
+}
+
+.hero-section__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  z-index: 2;
+  position: relative;
 }

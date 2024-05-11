@@ -1,3 +1,54 @@
-// .slider__wrapper {
+.slider__wrapper {
+  position: relative;
+}
 
-// }
+.slider__scroller {
+  width: 4px;
+  height: 100%;
+  background-color: $icon-grey;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider__scroller::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid $icon-grey;
+  background-color: $light-text-color;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -18px;
+}
+
+.slider__scroller::after {
+  content: "";
+  width: 24px;
+  height: 18px;
+  background-color: $icon-grey;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10px;
+  mask-image: url("../../icons/slider.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.slider__scroller:hover,
+.slider__scroller:hover::after {
+  background-color: $bg-theme;
+}
+
+.slider__scroller:hover::before {
+  border-color: $bg-theme;
+}
+
+.slider__scroller:active {
+  opacity: 0.5;
+}

@@ -1,11 +1,60 @@
 .example {
   background-color: $bg-light-theme;
+  padding: 25px 0 40px;
+
 
   @media (min-width: 768px) {
-    background: linear-gradient(to bottom, $light-text-color 50%, $bg-light-theme 50%);
+    background: linear-gradient(to bottom, $light-text-color 41.5%, $bg-light-theme 41.5%);
   }
 
   @media (min-width: 1440px) {
-    background: linear-gradient(to bottom, $light-text-color 136px, $bg-light-theme 136px);
+    background: linear-gradient(to bottom, $light-text-color 155px, $bg-light-theme 155px);
+    padding: 20px 0 55px;
+    position: relative;
+  }
+}
+
+.example__inner-content {
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 85px;
+  }
+}
+
+.example__text-wrapper {
+  @media (min-width: 1440px) {
+    max-width: 434px;
+  }
+}
+
+.example__desc {
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+    min-width: 708px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 1440px) {
+    min-width: 435px;
+    margin: 0 0 54px;
+  }
+}
+
+.example__tittle {
+  @media (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+}
+
+.example__slider {
+  @media (min-width: 1440px) {
+    position: absolute;
+    top: 17px;
+    bottom: auto;
+    right: 110px;
   }
 }

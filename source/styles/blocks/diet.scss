@@ -1,14 +1,50 @@
+.diet__wrapper {
+  margin-bottom: 18px;
+
+  @media (min-width: 768px) {
+    margin-top: -83px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: -143px;
+    margin-bottom: 70px;
+  }
+}
+
 .diet__list {
   @include list-reset;
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: 768px) {
+    gap: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    gap: 80px;
+    justify-content: space-between;
+  }
 }
 
 .diet__item {
   background-color: $basic-grey;
-  padding: 18px 20px;
+  padding: 24px 20px;
   position: relative;
+
+  @media (min-width: 768px) {
+    padding: 77px 63px 65px 52px;
+    min-width: 708px;
+    text-align: left;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 47px 52px 65px;
+    min-width: 570px;
+    max-width: 900px;
+  }
 }
 
 .diet__item::before {
@@ -18,6 +54,20 @@
   border-radius: 50%;
   background-color: $bg-theme;
   position: absolute;
+
+  @media (min-width: 768px) {
+    width: 200px;
+    height: 200px;
+    right: 63px;
+    top: 91px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
 }
 
 .diet__item::after {
@@ -26,20 +76,57 @@
   height: 50px;
   position: absolute;
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    width: 269px;
+    height: 194px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 135px;
+    height: 97px;
+  }
 }
 
 .diet__item--tiny::after {
   background-image: url("../../icons/cat-sit.svg");
   background-size: 37px 50px;
-  top: 16px;
+  top: 21px;
   left: 27px;
+
+  @media (min-width: 768px) {
+    background-size: 140px 194px;
+    top: 81px;
+    right: 93px;
+    left: auto;
+    width: 140;
+  }
+
+  @media (min-width: 1440px) {
+    background-size: 70px 97px;
+    top: 41px;
+    left: 67px;
+  }
 }
 
 .diet__item--fat::after {
   background-image: url("../../icons/cat-walk.svg");
   background-size: 68px 29px;
-  left: 12px;
-  top: 30px;
+  left: 11px;
+  top: 34px;
+
+  @media (min-width: 768px) {
+    background-size: 269px 113px;
+    top: 135px;
+    left: auto;
+    right: 29px;
+  }
+
+  @media (min-width: 1440px) {
+    background-size: 135px 57px;
+    top: 67px;
+    left: 33px;
+  }
 }
 
 .diet__title {
@@ -47,12 +134,20 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
-  margin: 0;
-  margin-left: 90px;
+  margin: 6px 0 29px 70px;
+  text-transform: uppercase;
 
   @media (min-width: 768px) {
     font-size: 36px;
     line-height: 36px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 30px;
+    margin-left: 162px;
+    margin-bottom: 73px;
   }
 }
 
@@ -63,8 +158,17 @@
 
 
   @media (min-width: 768px) {
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
+    border-bottom: none;
+    max-width: 58%;
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: 1440px) {
+    min-width: 460px;
+    margin-bottom: 35px;
   }
 }
 
@@ -74,28 +178,30 @@
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
+  width: 170px;
   display: flex;
-  gap: 25px;
+  gap: 16px;
   align-items: center;
+  justify-self: flex-start;
 
   @media (min-width: 768px) {
     font-size: 20px;
+    gap: 28px;
   }
 }
 
 .diet__link::after {
   content: "";
   width: 24px;
-  height: 12px;
-  display: block;
-  background-image: url("../../icons/arrow.svg");
+  height: 13px;
+  background-image: url("../../icons/arrow-short.svg");
   background-repeat: no-repeat;
 }
 
 .diet__link:hover::after,
 .diet__link:focus-visible::after {
   width: 32px;
-  height: 10px;
+  background-image: url("../../icons/arrow-long.svg");
 }
 
 .diet__link:active {

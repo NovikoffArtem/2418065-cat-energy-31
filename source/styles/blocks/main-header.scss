@@ -1,11 +1,15 @@
-.main-header__wrapper {
-  min-width: 280px;
+.main-header__nav {
+  @media (min-width: 768px) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 110px;
+  }
 }
 
 .main-header__logo {
   text-decoration: none;
-  align-items: center;
-  display: block;
   z-index: 5;
 }
 
@@ -28,13 +32,12 @@
   }
 
   @media (min-width: 768px) {
+    padding: 0;
     gap: 13px;
-    padding-left: 30px;
-    padding-top: 25px;
   }
 
   @media (min-width: 1440px) {
-    gap: 14px;
+    gap: 9px;
   }
 }
 

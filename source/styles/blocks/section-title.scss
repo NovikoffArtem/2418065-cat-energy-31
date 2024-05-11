@@ -4,9 +4,12 @@
   line-height: 40px;
   color: $second-text-color;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 40px;
 
   @media (min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 33px;
   }
 }

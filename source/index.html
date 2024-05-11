@@ -15,42 +15,44 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <nav class="main-nav">
-        <div class="main-header__header-wrapper">
-          <a class="main-header__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-tablet-desktop.svg" width="70" height="59">
-              <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-tablet-desktop.svg" width="60" height="50">
-              <img class="logo-pic" src="images/logo-mobile.svg" alt="Логотип сайта" width="33" height="38">
-            </picture>
-          </a>
-          <a class="main-header__logo" href="index.html">
-            <img class="logo-text logo-text--size" src="images/logo-text.svg" alt="Логотип сайта" width="101" height="18">
-          </a>
-          <button class="main-header__toggle toggle--close toggle button" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="main-header__nav">
+        <nav class="main-nav">
+          <div class="main-header__header-wrapper">
+            <a class="main-header__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-tablet-desktop.svg" width="70" height="59">
+                <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-tablet-desktop.svg" width="60" height="50">
+                <img class="logo-pic" src="images/logo-mobile.svg" alt="Логотип сайта" width="33" height="38">
+              </picture>
+            </a>
+            <a class="main-header__logo" href="index.html">
+              <img class="logo-text logo-text--size" src="images/logo-text.svg" alt="Логотип сайта" width="101" height="18">
+            </a>
+            <button class="main-header__toggle toggle--close toggle button" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <section class="hero-section">
-        <div class="hero-section__wrapper">
+        <div class="hero-section__wrapper content-wrapper">
           <div class="hero-section__content">
             <h1 class="hero-section__title">Функциональное<br> питание для котов</h1>
             <p class="hero-section__desc">
               Занялся собой? Займись котом!
             </p>
-            <a class="hero-section__button button button--primary" href="#">Подбор программы</a>
+            <a class="hero-section__button button button--primary" href="#">Подобрать программу</a>
           </div>
           <picture>
             <source media="(min-width: 1440px)" type="image/png" srcset="images/hero-desktop@1x.png 1x, images/hero-desktop@2x.png 2x" width="552" height="499">
@@ -63,7 +65,7 @@
   </header>
   <main class="main-content">
     <section class="diet">
-      <div class="diet__wrapper">
+      <div class="diet__wrapper content-wrapper">
         <h2 class="visually-hidden">Выбор программы</h2>
         <ul class="diet__list">
           <li class="diet__item diet__item--tiny">
@@ -88,7 +90,7 @@
       </div>
     </section>
     <section class="advantages">
-      <div class="advantages__wrapper">
+      <div class="advantages__wrapper content-wrapper">
         <h2 class="advantages__title section-title">Как это работает</h2>
         <ol class="advantages__list">
           <li class="advantages__item advantages__item--nutritious">
@@ -123,46 +125,52 @@
       </div>
     </section>
     <section class="example">
-      <div class="example__wrapper">
+      <div class="example__wrapper content-wrapper">
         <h2 class="example__tittle section-title">Живой пример</h2>
-        <div class="example__text">
-          <p class="example__desc">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой
-            обычный корм на Cat Energy Slim. Отличный результат
-            без изнуряющих тренировок! При этом он не менял своих
-            привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <div class="stats">
-            <dl class="stats__list">
-              <div class="stats__item">
-                <dt class="stats__title">5 КГ</dt>
-                <dd class="stats__desc">снижение веса</dd>
+        <div class="example__inner-content">
+          <div class="example__text-wrapper">
+            <div class="example__text">
+              <p class="example__desc">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой
+                обычный корм на Cat Energy Slim. Отличный результат
+                без изнуряющих тренировок! При этом он не менял своих
+                привычек и по-прежнему спит по 16 часов в день.
+              </p>
+              <div class="stats">
+                <dl class="stats__list">
+                  <div class="stats__item">
+                    <dt class="stats__title">5 КГ</dt>
+                    <dd class="stats__desc">снижение веса</dd>
+                  </div>
+                  <div class="stats__item">
+                    <dt class="stats__title">60 дней</dt>
+                    <dd class="stats__desc">затрачено времени</dd>
+                  </div>
+                </dl>
+                <p class="stats__text"><span>затраты на питание:</span><span>15 000 руб.</span></p>
               </div>
-              <div class="stats__item">
-                <dt class="stats__title">60 дней</dt>
-                <dd class="stats__desc">затрачено времени</dd>
-              </div>
-            </dl>
-            <p class="stats__text"><span>затраты на питание:</span><span>15000 руб</span></p>
+            </div>
           </div>
-        </div>
-        <div class="example__slider slider">
-          <div class="slider__wrapper">
-            <div class="slider__before">
-              <picture>
-                <source media="(min-width: 1440px)" type="image/png" srcset="images/before-desktop@1x.png 1x, images/before-desktop@2x.png 2x" width="560" height="512">
-                <source media="(min-width: 768px)" type="image/png" srcset="images/before-tablet@1x.png 1x, images/before-tablet@2x.png 2x" width="560" height="512">
-                <img src="images/before-mobile@1x.png" srcset="images/before-mobile@2x.png 2x" alt="Борис ДО>" width="280" height="256">
-              </picture>
+          <div class="example__slider slider">
+            <div class="slider__wrapper">
+              <div class="slider__before">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/png" srcset="images/before-desktop@1x.png 1x, images/before-desktop@2x.png 2x" width="560" height="512">
+                  <source media="(min-width: 768px)" type="image/png" srcset="images/before-tablet@1x.png 1x, images/before-tablet@2x.png 2x" width="560" height="512">
+                  <img src="images/before-mobile@1x.png" srcset="images/before-mobile@2x.png 2x" alt="Борис ДО>" width="280" height="256">
+                </picture>
+              </div>
+              <div class="slider__after">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/png" srcset="images/after-desktop@1x.png 1x, images/after-desktop@2x.png 2x" width="560" height="512">
+                  <source media="(min-width: 768px)" type="image/png" srcset="images/after-tablet@1x.png 1x, images/after-tablet@2x.png 2x" width="560" height="512">
+                  <img src="images/after-mobile@1x.png" srcset="images/after-mobile@2x.png 2x" alt="Борис После>" width="280" height="256">
+                </picture>
+              </div>
+              <button class="slider__scroller button" type="button">
+                <span class="visually-hidden">Посмотрите разницу</span>
+              </button>
             </div>
-            <div class="slider__after">
-              <picture>
-                <source media="(min-width: 1440px)" type="image/png" srcset="images/after-desktop@1x.png 1x, images/after-desktop@2x.png 2x" width="560" height="512">
-                <source media="(min-width: 768px)" type="image/png" srcset="images/after-tablet@1x.png 1x, images/after-tablet@2x.png 2x" width="560" height="512">
-                <img src="images/after-mobile@1x.png" srcset="images/after-mobile@2x.png 2x" alt="Борис После>" width="280" height="256">
-              </picture>
-            </div>
-            <div class="slider__scroller"></div>
           </div>
         </div>
       </div>
@@ -170,9 +178,9 @@
     <section class="location">
       <div class="location__wrapper">
         <div class="location__contacts contacts">
-          <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="contacts__title">приглашаем<br> к сотрудничеству дилеров!</h2>
           <div>
-            <p class="contacts__text">
+            <p class="contacts__text contacts__text--top">
               ул. Большая Конюшенная, д. 19/8
             </p>
             <p class="contacts__text">
@@ -184,7 +192,7 @@
           <picture>
             <source media="(min-width: 1440px)" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
             <source media="(min-width: 768px)" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
-            <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Мы на карте" width="320" height="362">
+            <img class="location__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Мы на карте" width="320" height="362">
           </picture>
         </div>
       </div>

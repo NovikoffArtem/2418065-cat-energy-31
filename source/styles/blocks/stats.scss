@@ -1,6 +1,27 @@
+.stats {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1440px) {
+    flex-direction: column;
+  }
+}
+
 .stats__list {
   display: flex;
   text-align: center;
+  gap: 32px;
+  margin-bottom: 35px;
+
+  @media (min-width: 768px) {
+    gap: 43px;
+  }
+}
+
+.stats__item {
+  position: relative;
 }
 
 .stats__title {
@@ -9,20 +30,47 @@
   line-height: 24px;
   color: $second-text-color;
   text-transform: uppercase;
+  display: block;
+  min-width: 124px;
+  padding: 13px 18px 15px;
+  border: 3px solid $border-color;
+  border-radius: 3px;
+
 
   @media (min-width: 768px) {
     font-size: 30px;
     line-height: 37px;
+    padding: 15px;
+    min-width: 162px;
   }
 }
 
 .stats__desc {
   font-size: 12px;
   line-height: 12px;
+  padding: 0 14px;
+  display: block;
+  width: 87px;
+  position: absolute;
+  top: 47px;
+  right: 18px;
+  background-color: $bg-light-theme;
+
 
   @media (min-width: 768px) {
     font-size: 14px;
     line-height: 14px;
+    min-width: 77%;
+    background-color: $light-text-color;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    bottom: -4px;
+    top: auto;
+  }
+
+  @media (min-width: 1440px) {
+    background-color: $bg-light-theme;
   }
 }
 
@@ -32,9 +80,24 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $second-text-color;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 20px;
+    margin-top: 25px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    gap: 63px;
   }
 }

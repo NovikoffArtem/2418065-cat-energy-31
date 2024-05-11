@@ -1,7 +1,20 @@
 .copyright {
   display: flex;
+  justify-content: space-between;
   text-decoration: none;
   color: $icon-grey;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 290px;
+  }
+
+  @media (min-width: 1440px) {
+    // justify-content: none;
+    gap: 20px;
+    width: 220px;
+  }
 }
 
 .copyright__logo {
@@ -10,6 +23,9 @@
 
 .copyright__text {
   color: $basic-text-color;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .copyright:hover,

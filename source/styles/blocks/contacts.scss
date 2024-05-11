@@ -1,5 +1,18 @@
 .contacts {
+  background-color: $light-text-color;
+  padding: 26px 20px;
   display: flex;
+  gap: 14px;
+
+  @media (min-width: 768px) {
+    padding: 60px 70px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 60px 78px 60px 80px;
+    width: 565px;
+  }
 }
 
 .contacts__title {
@@ -8,20 +21,36 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $second-dark;
+  font-weight: 400;
+  margin: 0;
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 26px;
+    width: 163px;
   }
 }
 
 .contacts__text {
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
 
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+    width: 157px;
+  }
+
+  @media (min-width: 1440px) {
+    text-align: left;
+  }
+}
+
+
+.contacts__text--top {
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
   }
 }

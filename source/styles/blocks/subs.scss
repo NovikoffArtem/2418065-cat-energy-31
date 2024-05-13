@@ -1,12 +1,43 @@
+.subs__wrapper {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 104px;
+  }
+}
+
+
+.subs__title {
+  margin-bottom: 32px;
+}
+
 .subs__desc {
   font-family: $secondary-font;
   color: $second-text-color;
   font-size: 16px;
   line-height: 14px;
+  margin-bottom: 24px;
+  text-align: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 32px;
+  }
+}
+
+.subs__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
   }
 }
 
@@ -15,11 +46,21 @@
   min-width: 280px;
   height: 56px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     min-width: 376px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     min-width: 496px;
+  }
+}
+
+.subs__button {
+  font-size: 20px;
+  line-height: 26px;
+  padding: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
   }
 }

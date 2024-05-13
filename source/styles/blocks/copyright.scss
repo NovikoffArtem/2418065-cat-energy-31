@@ -6,12 +6,11 @@
   align-items: center;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 290px;
   }
 
-  @media (min-width: 1440px) {
-    // justify-content: none;
+  @media (min-width: $desktop-width) {
     gap: 20px;
     width: 220px;
   }

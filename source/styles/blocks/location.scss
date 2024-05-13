@@ -1,15 +1,16 @@
 .location__map {
   width: 100%;
+  object-fit: cover;
 }
 
 .location__wrapper {
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     position: relative;
   }
 }
 
 .location__contacts {
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
     left: 110px;

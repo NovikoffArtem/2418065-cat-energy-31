@@ -8,7 +8,7 @@
 }
 
 .logo-text--size {
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     width: 120px;
     height: 21px;
   }

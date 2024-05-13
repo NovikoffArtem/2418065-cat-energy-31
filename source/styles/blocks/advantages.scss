@@ -1,11 +1,11 @@
 .advantages__wrapper {
   margin-bottom: 49px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 18px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 }
@@ -17,14 +17,14 @@
   flex-direction: column;
   gap: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     flex-flow: row wrap;
     gap: 37px 137px;
     position: relative;
     padding-bottom: 50px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     flex-flow: row nowrap;
     gap: 75px;
     max-width: none;
@@ -32,7 +32,7 @@
   }
 
   &::before {
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       content: "";
       width: calc(100% + (60px));
       height: 1px;
@@ -43,7 +43,7 @@
       bottom: 3px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $desktop-width) {
       content: none;
     }
   }
@@ -57,7 +57,7 @@
   position: relative;
   counter-increment: my-counter;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     flex-direction: column;
     min-width: 230px;
     max-width: 250px;
@@ -66,13 +66,13 @@
 }
 
 .advantages__item:first-child::after {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     right: 20px;
   }
 }
 
 .advantages__item::after {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     content: counter(my-counter);
     position: absolute;
     display: block;
@@ -95,7 +95,7 @@
   background-repeat: no-repeat;
   background-color: $bg-theme;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
     z-index: 1;
@@ -131,7 +131,7 @@
   z-index: 1;
 
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     margin: 0;

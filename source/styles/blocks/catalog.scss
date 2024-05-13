@@ -1,3 +1,32 @@
+.catalog__wrapper {
+  margin-bottom: 25px;
+}
+
+.catalog-title {
+  margin-bottom: 41px;
+}
+
 .catalog__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    gap: 63px 80px;
+    justify-content: center;
+  }
+}
+
+.catalog__item {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

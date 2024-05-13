@@ -7,7 +7,7 @@
   margin: 0;
   margin-bottom: 40px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 33px;

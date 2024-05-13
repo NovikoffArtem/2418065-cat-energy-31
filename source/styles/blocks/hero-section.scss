@@ -1,7 +1,7 @@
 .hero-section__wrapper {
   padding-top: 27px;
 
-  @media (min-width: 1140px) {
+  @media (min-width: $desktop-width) {
     padding-top: 0;
   }
 }
@@ -21,7 +21,7 @@
   background-size: 100%, 320px 302px, 100%;
   background-position: top center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     background: none;
     min-height: 696px;
   }
@@ -32,14 +32,13 @@
   min-width: 100%;
   min-height: 302px;
   position: absolute;
-  inset: 0 auto auto 0;
   z-index: 1;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     background: none;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     top: -224px;
     min-height: 100%;
     background-image:
@@ -65,13 +64,13 @@
   align-items: center;
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     align-items: flex-start;
     gap: 40px;
     padding-left: 90px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     align-items: flex-start;
     gap: 40px;
     padding-left: 80px;
@@ -88,7 +87,7 @@
   margin: 0;
   z-index: 2;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     color: $second-text-color;
@@ -106,14 +105,14 @@
   margin: 0;
   z-index: 2;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: $second-text-color;
     margin-bottom: 10px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 13px;
   }
 }
@@ -129,7 +128,7 @@
   display: block;
 
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
     padding: 14px 26px;
@@ -145,12 +144,12 @@
   z-index: 2;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     top: -84px;
     margin: 0 auto;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     position: absolute;
     margin: 0;
     right: 23%;

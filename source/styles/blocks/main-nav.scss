@@ -1,10 +1,10 @@
 .main-nav {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding: 25px 30px;
     display: flex;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     padding: 55px 110px 0;
   }
 }
@@ -17,7 +17,7 @@
   background-color: #ffffff;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -29,7 +29,7 @@
     background-color: transparent;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     max-width: 650px;
   }
 }
@@ -42,7 +42,7 @@
   text-align: center;
   border-top: 1px solid $border-light;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     border: none;
     margin-left: 33px;
   }
@@ -59,13 +59,13 @@
   padding: 22px 20px 24px;
   z-index: 5;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
     padding: 0;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
     color: $light-text-color;
@@ -73,7 +73,7 @@
 }
 
 .main-nav__link--catalog {
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     color: $second-dark;
   }
 }

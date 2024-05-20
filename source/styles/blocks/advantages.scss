@@ -13,21 +13,21 @@
 .advantages__list {
   @include list-reset;
 
-  display: flex;
+  display: grid;
   flex-direction: column;
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    flex-flow: row wrap;
+    grid-template-columns: repeat(2, 34.9%);
     gap: 37px 137px;
     position: relative;
     padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     flex-flow: row nowrap;
-    gap: 75px;
-    max-width: none;
+    gap: 77px;
     justify-content: center;
   }
 
@@ -59,51 +59,54 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    min-width: 230px;
-    max-width: 250px;
     padding: 40px 0 57px;
+    min-height: 280px;
   }
-}
 
-.advantages__item:first-child::after {
-  @media (min-width: $tablet-width) {
-    right: 20px;
+  @media (min-width: $desktop-width) {
+    max-width: 248px;
   }
-}
 
-.advantages__item::after {
-  @media (min-width: $tablet-width) {
-    content: counter(my-counter);
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(my-counter);
+      position: absolute;
+      display: block;
+      font-family: $secondary-font;
+      font-size: 280px;
+      line-height: 280px;
+      font-weight: 400;
+      color: $basic-grey;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &:first-child::after {
+    right: 24px;
+  }
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
     position: absolute;
-    display: block;
-    font-family: $secondary-font;
-    font-size: 280px;
-    line-height: 280px;
-    font-weight: 400;
-    color: $basic-grey;
-    right: 0;
-    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $bg-theme;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      z-index: 1;
+      margin-right: auto;
+      position: relative;
+      margin-bottom: 31px;
+    }
   }
 }
 
-.advantages__item::before {
-  content: "";
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: $bg-theme;
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    z-index: 1;
-    margin-right: auto;
-    position: relative;
-    margin-bottom: 31px;
-  }
-}
 
 .advantages__item--nutritious::before {
   background-image: url("../../icons/leaf.svg");

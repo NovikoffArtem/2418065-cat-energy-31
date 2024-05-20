@@ -7,12 +7,13 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 290px;
+    width: 168px;
+    justify-content: flex-end;
+    gap: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 20px;
-    width: 220px;
+    width: 255px;
   }
 }
 
@@ -21,10 +22,10 @@
 }
 
 .copyright__text {
-  color: $basic-text-color;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
+  color: $basic-text-color;
 }
 
 .copyright:hover,

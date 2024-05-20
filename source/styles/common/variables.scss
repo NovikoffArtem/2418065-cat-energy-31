@@ -14,7 +14,12 @@ $border-light: #ebebeb;
 $border-light-2: #d9d9d9;
 $icon-grey: #666666;
 $gradient-bg: rgba(104, 183, 56, 0.85);
-$gradient-bg-2: #474163;
+$gradient-bg-2: #3e3d42;
+$gradient-bg-mobile-1: #525156;
+$gradient-bg-mobile-2: #444348;
 
 $tablet-width: 768px;
-$desktop-width: 1220px;
+$desktop-width: 1440px;
+$max-mobile-width: 767px;
+
+$curtain-place: 0.5;

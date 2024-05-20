@@ -1,15 +1,27 @@
+.example__wrapper {
+  max-width: 1440px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
+}
+
 .example {
   background-color: $bg-light-theme;
-  padding: 25px 0 40px;
+  padding: 25px 0 39px;
 
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, $light-text-color 41.5%, $bg-light-theme 41.5%);
+    background: linear-gradient(to bottom, $light-text-color 599px, $bg-light-theme 599px);
   }
 
   @media (min-width: $desktop-width) {
     background: linear-gradient(to bottom, $light-text-color 155px, $bg-light-theme 155px);
-    padding: 20px 0 55px;
+    padding: 20px 0 10px;
     position: relative;
   }
 }
@@ -17,14 +29,20 @@
 .example__inner-content {
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
     padding-top: 85px;
+    gap: 225px;
   }
 }
 
-.example__text-wrapper {
+.example__text {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 68px;
+  }
+
+
   @media (min-width: $desktop-width) {
-    max-width: 434px;
+    max-width: 436px;
+    margin-bottom: 0;
   }
 }
 
@@ -39,7 +57,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 435px;
+    min-width: auto;
     margin: 0 0 54px;
   }
 }
@@ -52,9 +70,6 @@
 
 .example__slider {
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 17px;
-    bottom: auto;
-    right: 110px;
+    margin-top: -205px;
   }
 }

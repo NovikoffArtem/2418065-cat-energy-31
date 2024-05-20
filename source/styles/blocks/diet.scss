@@ -26,6 +26,7 @@
     flex-direction: row;
     gap: 80px;
     justify-content: space-between;
+    width: 1220px;
   }
 }
 
@@ -152,9 +153,9 @@
 }
 
 .diet__desc {
-  padding-bottom: 25px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 
 
   @media (min-width: $tablet-width) {

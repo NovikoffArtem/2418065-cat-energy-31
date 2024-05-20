@@ -1,22 +1,30 @@
 .hero-section__wrapper {
   padding-top: 27px;
 
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 30px 0;
+    position: relative;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-top: 0;
+    padding: 0 110px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
 .hero-section {
-
   position: relative;
+  width: 100%;
   background-image:
-    linear-gradient($gradient-bg 69%, $light-text-color 31%),
+    linear-gradient($gradient-bg 69%, $light-text-color 69%),
     image-set(
       url("../../images/hero-bg@1x.webp") type("image/webp") 1x,
       url("../../images/hero-bg@2x.webp") type("image/webp") 2x,
       url("../../images/hero-bg@1x.jpg") type("image/jpg") 1x,
       url("../../images/hero-bg@2x.jpg") type("image/jpg") 2x),
-    linear-gradient($gradient-bg-2 50% 50%);
+    linear-gradient(90deg, $gradient-bg-mobile-1 50%, $gradient-bg-mobile-2 50%);
   background-repeat: no-repeat;
   background-size: 100%, 320px 302px, 100%;
   background-position: top center;
@@ -24,37 +32,36 @@
   @media (min-width: $tablet-width) {
     background: none;
     min-height: 696px;
+    position: static;
   }
 }
 
-.hero-section::after {
-  content: "";
-  min-width: 100%;
-  min-height: 302px;
-  position: absolute;
-  z-index: 1;
-
+.hero-section::before {
   @media (min-width: $tablet-width) {
     background: none;
   }
 
   @media (min-width: $desktop-width) {
-    top: -224px;
-    min-height: 100%;
+    content: "";
+    position: absolute;
+    min-width: 100%;
+    top: 0;
+    right: 0;
+    height: 694px;
     background-image:
       linear-gradient(90deg, $light-text-color 50%, $gradient-bg 50%),
       image-set(
         url("../../images/hero-bg-desktop@1x.webp") type("image/webp") 1x,
         url("../../images/hero-bg-desktop@2x.webp") type("image/webp") 2x,
-        url("../../images/hero-bg-desktop@1x.jpg") type("image/jpg") 1x,
-        url("../../images/hero-bg-desktop@2x.jpg") type("image/jpg") 2x),
-      linear-gradient($gradient-bg-2 50% 50%);
-
+        url("../../images/hero-bg-desktop@1x.png") type("image/png") 1x,
+        url("../../images/hero-bg-desktop@2x.png") type("image/png") 2x),
+      linear-gradient(90deg, $light-text-color 50%, $gradient-bg-2 50%);
     background-repeat: no-repeat;
-    background-position: right 0;
+    background-position: 50%, calc(50% + 520px) bottom;
     background-size: contain;
   }
 }
+
 
 .hero-section__content {
   display: flex;
@@ -93,6 +100,7 @@
     color: $second-text-color;
     text-align: left;
     margin: 0;
+    z-index: 3;
   }
 }
 
@@ -103,7 +111,7 @@
   text-transform: uppercase;
   color: $light-text-color;
   margin: 0;
-  z-index: 2;
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -152,8 +160,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     margin: 0;
-    right: 23%;
-    left: auto;
-    top: -80px;
+    left: 558px;
+    top: -81px;
   }
 }

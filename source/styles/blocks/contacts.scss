@@ -2,6 +2,7 @@
   background-color: $light-text-color;
   padding: 26px 20px;
   display: flex;
+  justify-content: space-between;
   gap: 14px;
 
   @media (min-width: $tablet-width) {

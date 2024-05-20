@@ -1,11 +1,22 @@
+.location__wrapper {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 .location__map {
+  display: none;
   width: 100%;
   object-fit: cover;
 }
 
-.location__wrapper {
-  @media (min-width: $desktop-width) {
-    position: relative;
+.location__map-iframe {
+  width: 100%;
+  height: 362px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
   }
 }
 
@@ -15,4 +26,12 @@
     top: 95px;
     left: 110px;
   }
+}
+
+.location__map-wrapper--nojs .location__map-iframe {
+  display: none;
+}
+
+.location__map-wrapper--nojs .location__map {
+  display: block;
 }

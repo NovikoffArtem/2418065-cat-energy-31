@@ -1,9 +1,30 @@
 .catalog__wrapper {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+    max-width: 1440px;
+  }
 }
 
-.catalog-title {
-  margin-bottom: 41px;
+.catalog__title {
+  margin-bottom: 38px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    margin-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    margin-bottom: 84px;
+  }
 }
 
 .catalog__list {
@@ -20,6 +41,7 @@
     max-width: 1440px;
     gap: 63px 80px;
     justify-content: center;
+    margin: 0 auto;
   }
 }
 

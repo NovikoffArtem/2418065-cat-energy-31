@@ -6,7 +6,7 @@ source {
 
 .slider__wrapper {
   display: grid;
-  grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
+  grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%); /*stylelint-disable-line*/
   width: min(100%, 560px);
   aspect-ratio: 280 / 256;
   justify-content: center;

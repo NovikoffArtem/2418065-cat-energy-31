@@ -6,14 +6,31 @@
   text-align: center;
   border: none;
   padding: 10px;
+  transition: background-color 200ms ease-in-out;
 }
 
 
 .button--primary {
   background-color: $bg-theme;
+
+  &:hover {
+    background-color: $bg-theme-2;
+  }
+
+  &:active {
+    color: $active-btn-color;
+  }
 }
 
 .button--secondary {
   background-color: $basic-grey;
   color: $basic-text-color;
+
+  &:hover {
+    background-color: $border-light;
+  }
+
+  &:active {
+    color: $icon-grey;
+  }
 }

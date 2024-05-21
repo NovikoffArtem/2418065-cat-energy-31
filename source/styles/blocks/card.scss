@@ -60,6 +60,15 @@
   height: 107px;
   justify-content: center;
   align-items: center;
+  transition: transform 300ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (min-width: $tablet-width) {
     width: 200px;
@@ -86,6 +95,15 @@
   font-weight: 400;
   margin: 0;
   width: 76px;
+  transition: color 200ms ease-in-out;
+
+  &:hover {
+    color: $bg-theme;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -107,6 +125,11 @@
     margin-top: 53px;
     margin-bottom: 8px;
     width: auto;
+
+    &:hover {
+      color: $second-dark;
+      opacity: 0.6;
+    }
 
     @media (min-width: $tablet-width) {
       margin: 110px 0 23px;

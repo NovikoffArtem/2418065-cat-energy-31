@@ -2,7 +2,7 @@
   max-width: 1440px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 64px;
+    margin-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -12,7 +12,7 @@
 
 .example {
   background-color: $bg-light-theme;
-  padding: 25px 0 39px;
+  padding: 25px 0 41px;
 
 
   @media (min-width: $tablet-width) {

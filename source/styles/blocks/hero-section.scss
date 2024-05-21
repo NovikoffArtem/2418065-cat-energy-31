@@ -101,6 +101,11 @@
     text-align: left;
     margin: 0;
     z-index: 3;
+    max-width: 60%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 40%;
   }
 }
 
@@ -118,10 +123,12 @@
     line-height: 20px;
     color: $second-text-color;
     margin-bottom: 10px;
+    max-width: 40%;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 13px;
+    max-width: 30%;
   }
 }
 

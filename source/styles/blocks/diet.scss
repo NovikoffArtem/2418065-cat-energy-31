@@ -90,7 +90,7 @@
 }
 
 .diet__item--tiny::after {
-  background-image: url("../../icons/cat-sit.svg");
+  background-image: url("../../icons/stack.svg#cat-sit");
   background-size: 37px 50px;
   top: 21px;
   left: 27px;
@@ -111,7 +111,7 @@
 }
 
 .diet__item--fat::after {
-  background-image: url("../../icons/cat-walk.svg");
+  background-image: url("../../icons/stack.svg#cat-walk");
   background-size: 68px 29px;
   left: 11px;
   top: 34px;
@@ -195,14 +195,15 @@
   content: "";
   width: 24px;
   height: 13px;
-  background-image: url("../../icons/arrow-short.svg");
+  background-image: url("../../icons/stack.svg#arrow-short");
   background-repeat: no-repeat;
+  transition: all 200ms ease-in-out;
 }
 
 .diet__link:hover::after,
 .diet__link:focus-visible::after {
   width: 32px;
-  background-image: url("../../icons/arrow-long.svg");
+  background-image: url("../../icons/stack.svg#arrow-long");
 }
 
 .diet__link:active {

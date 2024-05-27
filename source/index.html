@@ -3,9 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Cat ENERGY</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="icon" href="favicon.ico">
+  <title>Cat ENERGY</title>
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font" crossorigin="anonymous">
+  <link rel=" icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple-180.png">
   <link rel="manifest" href="manifest.webmanifest">
@@ -17,14 +19,14 @@
     <div class="main-header__wrapper">
       <div class="main-header__header-wrapper">
         <div class="main-header__logo-wrapper">
-          <a class="main-header__logo-link main-header__logo-pic" href="index.html">
+          <a class="main-header__logo-link main-header__logo-pic" href="index.html" aria-current="page">
             <picture>
               <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-tablet-desktop.svg" width="70" height="59">
               <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-tablet-desktop.svg" width="60" height="50">
               <img class="logo-pic" src="images/logo-mobile.svg" alt="Логотип сайта" width="33" height="38">
             </picture>
           </a>
-          <a class="main-header__logo-link main-header__logo-text" href="index.html">
+          <a class="main-header__logo-link main-header__logo-text" href="index.html" aria-current="page">
             <img class="logo-text logo-text--size" src="images/logo-text.svg" alt="Логотип сайта" width="101" height="18">
           </a>
         </div>
@@ -34,7 +36,7 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--index main-nav__link--current" href="index.html">Главная</a>
+              <a class="main-nav__link main-nav__link--index main-nav__link--current" href="index.html" aria-current="page">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--index" href="catalog.html">Каталог продукции</a>
@@ -55,6 +57,9 @@
             <a class="hero-section__button button button--primary" href="#">Подобрать программу</a>
           </div>
           <picture>
+            <source media="(min-width: 1440px)" type="image/webp" srcset="images/hero-desktop@1x.webp 1x, images/hero-desktop@2x.webp 2x" width="552" height="499">
+            <source media="(min-width: 768px)" type="image/webp" srcset="images/hero-tablet@1x.webp 1x, images/hero-tablet@2x.webp 2x" width="709" height="609">
+            <source type="image/webp" srcset="images/hero-mobile@1x.webp@1x 1x, images/hero-mobile@2x.webp 2x" width="280" height="270">
             <source media="(min-width: 1440px)" type="image/png" srcset="images/hero-desktop@1x.png 1x, images/hero-desktop@2x.png 2x" width="552" height="499">
             <source media="(min-width: 768px)" type="image/png" srcset="images/hero-tablet@1x.png 1x, images/hero-tablet@2x.png 2x" width="709" height="609">
             <img class="hero-section__image" src="images/hero-mobile@1x.png" srcset="images/hero-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy со вкусом курицы">
@@ -151,9 +156,12 @@
           <div class="example__slider slider">
             <div class="slider__wrapper" style="--curtain-place: 0.5;">
               <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="images/before-desktop@1x.webp 1x, images/before-desktop@2x.webp 2x" width="560" height="512">
+                <source media="(min-width: 768px)" type="image/webp" srcset="images/before-tablet@1x.webp 1x, images/before-tablet@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/before-mobile@1x.webp 1x, images/before-mobile@2x.webp 2x" width="280" height="256">
                 <source media="(min-width: 1440px)" type="image/png" srcset="images/before-desktop@1x.png 1x, images/before-desktop@2x.png 2x" width="560" height="512">
                 <source media="(min-width: 768px)" type="image/png" srcset="images/before-tablet@1x.png 1x, images/before-tablet@2x.png 2x" width="560" height="512">
-                <img class="slider__image slider__image--before" src="images/before-mobile@1x.png" srcset="images/before-mobile@2x.png 2x" alt="Борис ДО>" width="280" height="256">
+                <img class="slider__image slider__image--before" src="images/before-mobile@1x.png" srcset="images/before-mobile@2x.png 2x" alt="Борис ДО>" width="280" height="256" loading="lazy">
               </picture>
               <div class="slider__curtain">
                 <button class="button" type="button">
@@ -161,9 +169,12 @@
                 </button>
               </div>
               <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="images/after-desktop@1x.webp 1x, images/after-desktop@2x.webp 2x" width="560" height="512">
+                <source media="(min-width: 768px)" type="image/webp" srcset="images/after-tablet@1x.webp 1x, images/after-tablet@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/after-mobile@1x.webp 1x, images/after-mobile@2x.webp 2x" width="280" height="256">
                 <source media="(min-width: 1440px)" type="image/png" srcset="images/after-desktop@1x.png 1x, images/after-desktop@2x.png 2x" width="560" height="512">
                 <source media="(min-width: 768px)" type="image/png" srcset="images/after-tablet@1x.png 1x, images/after-tablet@2x.png 2x" width="560" height="512">
-                <img class="slider__image slider__image--after" src="images/after-mobile@1x.png" srcset="images/after-mobile@2x.png 2x" alt="Борис После>" width="280" height="256">
+                <img class="slider__image slider__image--after" src="images/after-mobile@1x.png" srcset="images/after-mobile@2x.png 2x" alt="Борис После>" width="280" height="256" loading="lazy">
               </picture>
             </div>
           </div>
@@ -184,11 +195,14 @@
           </div>
         </div>
         <div class="location__map-wrapper location__map-wrapper--nojs">
-          <iframe class="location__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198161!2d30.32047247732078!3d59.93871916209359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1716222748170!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="location__map-iframe" title="Мы на карте: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198161!2d30.32047247732078!3d59.93871916209359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1716222748170!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <picture>
+            <source media="(min-width: 1440px)" type="image/webp" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="400">
+            <source media="(min-width: 768px)" type="image/webp" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="400">
+            <source type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x" width="320" height="362">
             <source media="(min-width: 1440px)" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
             <source media="(min-width: 768px)" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
-            <img class="location__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Мы на карте" width="320" height="362">
+            <img class="location__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Мы на карте" width="320" height="362" loading="lazy">
           </picture>
         </div>
       </div>
@@ -196,7 +210,7 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper content-wrapper">
-      <a class="footer__logo" href="index.html">
+      <a class="footer__logo" href="index.html" aria-current="page">
         <img class="logo-text logo-text--footer" src="images/logo-text.svg" alt="Логотип Cat Energy" width="128" height="24">
       </a>
       <ul class="footer__social social-list">
@@ -218,7 +232,7 @@
       </a>
     </div>
   </footer>
-  <script src="scripts/script.js"></script>
+  <script src="scripts/script.js" defer></script>
 </body>
 
 </html>

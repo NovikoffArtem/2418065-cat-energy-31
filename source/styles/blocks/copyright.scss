@@ -5,6 +5,8 @@
   color: $icon-grey;
   align-items: center;
   width: 100%;
+  transition: color 200ms ease-in-out;
+
 
   @media (min-width: $tablet-width) {
     width: 168px;

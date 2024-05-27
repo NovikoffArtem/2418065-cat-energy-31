@@ -1,5 +1,5 @@
 .hero-section__wrapper {
-  padding-top: 27px;
+  padding: 27px 20px 0;
 
 
   @media (min-width: $tablet-width) {
@@ -101,7 +101,7 @@
     text-align: left;
     margin: 0;
     z-index: 3;
-    max-width: 60%;
+    max-width: 70%;
   }
 
   @media (min-width: $desktop-width) {
@@ -123,7 +123,7 @@
     line-height: 20px;
     color: $second-text-color;
     margin-bottom: 10px;
-    max-width: 40%;
+    max-width: 50%;
   }
 
   @media (min-width: $desktop-width) {

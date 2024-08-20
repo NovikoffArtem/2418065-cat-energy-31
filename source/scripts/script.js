@@ -28,8 +28,8 @@ let clientX;
 window.addEventListener('mouseup', stopTheCurtainShifting);
 curtain.addEventListener('mousedown', startTheCurtainShifting);
 */
-window.addEventListener('touchstart', stopTheCurtainShifting);
-curtain.addEventListener('touchend', startTheCurtainShifting);
+window.addEventListener('touchend', stopTheCurtainShifting);
+curtain.addEventListener('touchstart', startTheCurtainShifting);
 
 function startTheCurtainShifting (event) {
   curtainPlaceStart = +(sliderStyles.getPropertyValue('--curtain-place'));

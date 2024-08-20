@@ -25,13 +25,13 @@ const sliderStyles = getComputedStyle(slider);
 let curtainPlaceStart;
 let clientX;
 
-window.addEventListener('pointerup', stopTheCurtainShifting);
-curtain.addEventListener('pointerdown', startTheCurtainShifting);
+window.addEventListener('touchend', stopTheCurtainShifting);
+curtain.addEventListener('touchstart', startTheCurtainShifting);
 
 function startTheCurtainShifting (event) {
   curtainPlaceStart = +(sliderStyles.getPropertyValue('--curtain-place'));
   clientX = event.clientX;
-  window.addEventListener('pointermove', shiftТheСurtain);
+  window.addEventListener('touchmove', shiftТheСurtain);
 }
 
 function shiftТheСurtain (event) {
@@ -42,5 +42,5 @@ function shiftТheСurtain (event) {
 }
 
 function stopTheCurtainShifting () {
-  window.removeEventListener('pointermove', shiftТheСurtain);
+  window.removeEventListener('touchmove', shiftТheСurtain);
 }

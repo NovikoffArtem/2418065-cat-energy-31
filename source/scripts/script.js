@@ -25,8 +25,8 @@ const sliderStyles = getComputedStyle(slider);
 let curtainPlaceStart;
 let clientX;
 
-window.addEventListener('touchend', stopTheCurtainShifting);
-curtain.addEventListener('touchstart', startTheCurtainShifting);
+window.addEventListener('pointerup', stopTheCurtainShifting);
+curtain.addEventListener('pointerdown', startTheCurtainShifting);
 
 function startTheCurtainShifting (event) {
   curtainPlaceStart = +(sliderStyles.getPropertyValue('--curtain-place'));

@@ -31,7 +31,7 @@ curtain.addEventListener('touchstart', startTheCurtainShifting);
 function startTheCurtainShifting (event) {
   curtainPlaceStart = +(sliderStyles.getPropertyValue('--curtain-place'));
   clientX = event.clientX;
-  window.addEventListener('touchmove', shiftТheСurtain);
+  window.addEventListener('pointermove', shiftТheСurtain);
 }
 
 function shiftТheСurtain (event) {

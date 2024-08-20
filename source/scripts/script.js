@@ -42,5 +42,5 @@ function shiftТheСurtain (event) {
 }
 
 function stopTheCurtainShifting () {
-  window.removeEventListener('touchmove', shiftТheСurtain);
+  window.removeEventListener('pointermove', shiftТheСurtain);
 }

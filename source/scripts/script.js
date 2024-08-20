@@ -28,10 +28,15 @@ let clientX;
 window.addEventListener('pointerup', stopTheCurtainShifting);
 curtain.addEventListener('pointerdown', startTheCurtainShifting);
 
+window.addEventListener('touchstart', stopTheCurtainShifting);
+curtain.addEventListener('touchend', startTheCurtainShifting);
+
 function startTheCurtainShifting (event) {
   curtainPlaceStart = +(sliderStyles.getPropertyValue('--curtain-place'));
   clientX = event.clientX;
   window.addEventListener('pointermove', shiftТheСurtain);
+}
+window.addEventListener('touchmove', shiftТheСurtain);
 }
 
 function shiftТheСurtain (event) {

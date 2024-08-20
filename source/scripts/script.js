@@ -24,18 +24,18 @@ const curtain = slider.querySelector('.slider__curtain');
 const sliderStyles = getComputedStyle(slider);
 let curtainPlaceStart;
 let clientX;
-
+/*
 window.addEventListener('mouseup', stopTheCurtainShifting);
 curtain.addEventListener('mousedown', startTheCurtainShifting);
-
+*/
 window.addEventListener('touchstart', stopTheCurtainShifting);
 curtain.addEventListener('touchend', startTheCurtainShifting);
 
 function startTheCurtainShifting (event) {
   curtainPlaceStart = +(sliderStyles.getPropertyValue('--curtain-place'));
   clientX = event.clientX;
-  window.addEventListener('mousemove', shiftТheСurtain);
-}
+ /* window.addEventListener('mousemove', shiftТheСurtain);
+}*/
 window.addEventListener('touchmove', shiftТheСurtain);
 }
 
